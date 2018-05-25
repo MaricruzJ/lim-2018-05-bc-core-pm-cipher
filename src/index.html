@@ -1,13 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Cesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>CIFRADO CESAR</h1>
+  </header>
+  <hr>
+  <table >
+    <td>
+      <p>TEXTO INICIAL</p>
+      <textarea autofocus id="textoInicial" rows="20" cols="35" placeholder="Ingrese texto..."></textarea>
+    </td>
+    <td class="columna-centro"> 
+      <p>N° DE SALTOS</p>
+      <input type="text" id="saltos" class="saltos" placeholder="Offset">
+      <br><br><br>
+      <input type="button" id="btnCifrado" value="CIFRAR" class="boton">
+      <br><br>
+      <input type="button" id="btnDescifrado" value="DESCIFRAR" class="boton">
+      <br>
+    </td>
+    <td>
+        <p>TEXTO ALTERADO</p>
+        <textarea id="textoModificado" rows="20" cols="35" placeholder="Esperando texto..."></textarea>
+    </td>
+  </table>
+  <div id="root"></div>
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+</body>
+<footer>
+  <p>PROYECTO 1 - Cifrado Cesar.     En Proceso :)</p>
+</footer>
 </html>
