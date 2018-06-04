@@ -97,15 +97,15 @@ button:hover {
   box-shadow: 0 1px 1px rgba(0,0,0,0.25), 0 4px 4px rgba(0,0,0,0.22);
 }
 
-.btn-encode::before{
-  content: url(lock-encode.png);
+.btn-Encode::before{
+  content: url(lock-Encode.png);
   right: 5px;
   position:relative;
   top:7px;            
 }
 
-.btn-decode::before{
-  content: url(lock-decode.png);
+.btn-Decode::before{
+  content: url(lock-Decode.png);
   right: 5px;
   position:relative;
   top:7px;            
