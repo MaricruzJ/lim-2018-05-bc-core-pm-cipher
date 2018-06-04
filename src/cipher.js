@@ -36,7 +36,7 @@ const descifrar = (offset, text) => {
     letterPosition = text.charCodeAt(i);
     
     if(letterPosition >= 65 && letterPosition <= 90){
-      decryptionLetterPosition = (letterPosition + 65 - parseInt(offset)) % 26 + 65;
+      decryptionLetterPosition = (letterPosition - 90 - parseInt(offset)) % 26 + 90;
       decipheredLetter = String.fromCharCode(decryptionLetterPosition);
       textOutput += decipheredLetter;
     }else if (letterPosition >= 97 && letterPosition <= 122){

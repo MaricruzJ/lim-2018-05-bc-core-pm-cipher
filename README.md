@@ -3,7 +3,7 @@
 ## Principales Usuarios:
 
 Esta aplicación va dirigido a quienes necesiten usar una aplicación de mensajería cifrada,
-donde para ver el texto original se tiene que tener si o si una llave (en este caso un número de 0 - 152).
+donde para ver el texto original se tiene que tener si o si una llave.
 El problema más cercano a resolver, según los requerimientos es la coordinación de una fiesta sorpresa. Pero se espera
 que esta aplicación pueda ser una app de mensajería, para ello en base a los feedback e investigación darle mayor funcionalidad.
 
