@@ -20,7 +20,7 @@ ya que el proyecto se presentaría de forma individual.
 > El día 1 una vez definido el Product Backlog, inicié con el diseño de la página (parte UX), para ello de entre las herramientas
 > para prototipado elegí balsamiq.
 
-![Prototipo Cesar](prototype.png)
+![Prototipo Cesar](src/prototype.png)
 
 ## Semana 1:
 
@@ -42,7 +42,7 @@ Cesar usaba este tipo de cifrado alfabético para comunicarse con sus generales.
 
 > Se editó el archivo para el Test, logrando un 100%.
 
-![Test](test.png)
+![Test](src/test.png)
 
 > Tomando en cuenta los feedback, decidí modificar el css para darle más estilo a la web.
 
@@ -53,7 +53,7 @@ Cesar usaba este tipo de cifrado alfabético para comunicarse con sus generales.
 
 Finalmente se tiene la aplicación web para cifrar y descifrar texto.
 
-![Aplicación Cesar](screenshot-page.png)
+![Aplicación Cesar](src/screenshot-page.png)
 
 ## HACKER EDITION:
 
@@ -65,7 +65,7 @@ Para realizar esta parte tuve que volver a leer teoría y definir
 
 Finalmente usé el modo consola de la web usando el typeof.
 
-![Consola HackerEdition](console.png)
+![Consola HackerEdition](src/console.png)
 
 ## README:
 
