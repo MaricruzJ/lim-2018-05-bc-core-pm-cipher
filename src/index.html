@@ -1,39 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Cesar Cipher</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8">
+    <title>Cesar Cipher</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <header>
-    <h1>CIFRADO CESAR</h1>
-  </header>
-  <hr>
-  <table >
-    <td>
-      <p>TEXTO INICIAL</p>
-      <textarea autofocus id="textoInicial" placeholder="Ingrese texto..."></textarea>
-    </td>
-    <td class="columna-centro"> 
-      <p>N° DE SALTOS</p>
-      <input type="text" id="saltos" class="saltos" placeholder="Offset">
-      <br><br><br>
-      <input type="button" id="btnCifrado" value="CIFRAR" class="boton">
-      <br><br>
-      <input type="button" id="btnDescifrado" value="DESCIFRAR" class="boton">
-      <br>
-    </td>
-    <td>
-        <p>TEXTO ALTERADO</p>
-        <textarea id="textoModificado" placeholder="Esperando texto..."></textarea>
-    </td>
-  </table>
-  <div id="root"></div>
-  <script src="cipher.js"></script>
-  <script src="index.js"></script>
+    <div class="content">
+        <div class="header">
+            <span>CIFRADO CESAR</span>
+        </div>
+        <div class="div" id="input">
+            <br>
+            <textarea type="text" autofocus id="textInput" class="text" placeholder="Ingrese texto ..."></textarea>
+        </div>
+        <div class="div">
+            <input type="number" id="offset" value="" class="offset" placeholder="Offset"><br>
+            <button id="btnCipher" class="btn-encode">Encriptar</button><br>
+            <button id="btnDecipher" class="btn-decode" >Desencriptar</button><br>
+         </div>
+        <div class="div" id="output">
+            <br>
+            <textarea type="text" id="textOutput" class="text" placeholder="Esperando texto ..."></textarea>
+        </div>
+    </div>
+    <div id="root"></div>
+    <script src="cipher.js"></script>
+    <script src="index.js"></script>
 </body>
 <footer>
-  <p>PROYECTO 1 - Cifrado Cesar.     En Proceso :)</p>
+    <span>Proyecto: Cifrado Cesar - Turno: PM </span>
 </footer>
 </html>

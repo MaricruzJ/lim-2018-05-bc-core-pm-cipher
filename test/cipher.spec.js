@@ -21,6 +21,8 @@ describe('cipher', () => {
     it('debería retornar " " para " " con offest 33',() =>{
       assert.equal(cipher.encode(33,' '),' ');
     });
+
+    
     
   });
 
@@ -53,7 +55,12 @@ describe('cipher', () => {
       assert.equal(typeof cipher.createCipherWithOffset,'function');
     });
 
-    it('debería retornar un objeto con dos funciones (encode y decode) con offset fijado');
+    it('debería retornar un objeto con dos funciones, llamados métodos (encode y decode) con offset fijado', ()=>{
+      assert.equal(typeof cipher.createCipherWithOffset(),'object');
+      assert.equal(typeof cipher.createCipherWithOffset(33).encode,'function');
+      assert.equal(cipher.createCipherWithOffset(2).encode('a'),'c');
+      assert.equal(cipher.createCipherWithOffset(2).decode('c'),'a');
+    });
 
   });
 

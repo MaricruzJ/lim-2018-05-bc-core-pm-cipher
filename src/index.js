@@ -1,13 +1,13 @@
-const txtInit = document.getElementById('textoInicial');
-const saltos = document.getElementById('saltos');
-const txtEnd = document.getElementById('textoModificado');
+const input = document.getElementById('textInput');
+const offset = document.getElementById('offset');
+const output = document.getElementById('textOutput');
 
-var btncifrar = document.getElementById('btnCifrado');
-btncifrar.addEventListener('click', () => {
-    txtEnd.value = window.cipher.encode(saltos.value,txtInit.value);
+var btnCipher = document.getElementById('btnCipher');
+btnCipher.addEventListener('click', () => {
+    output.value = window.cipher.encode(offset.value, input.value);
 });
 
-var btndescifrar = document.getElementById('btnDescifrado');
-btndescifrar.addEventListener('click', () => {
-    txtEnd.value = window.cipher.decode(saltos.value,txtInit.value);
-} );
+var btnDecipher = document.getElementById('btnDecipher');
+btnDecipher.addEventListener('click', () => {
+    output.value = window.cipher.decode(offset.value, input.value);
+});

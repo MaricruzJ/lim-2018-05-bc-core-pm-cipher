@@ -1,60 +1,68 @@
-let posicionCifrado;
-let letracifrada;
-let nuevaPosicion;
-let posicionDescifrado;
-let letraDescifrada;
+let letterPosition;
+let encryptionLetterPosition;
+let cipheredLetter;
+let decryptionLetterPosition;
+let decipheredLetter;
+let textOutput;
 
-const cifrar = (saltos,txtInit) => {
-  let txtEnd = '';
+const cifrar = (offset, text) =>{
+  textOutput = '';
   
-  for( let i= 0; i < txtInit.length; i++){
+  for( let i= 0; i < text.length; i++){
     
-    let posiciontextoInicial = txtInit.charCodeAt(i);
+    letterPosition = text.charCodeAt(i);
     
-    if(posiciontextoInicial >= 65 && posiciontextoInicial <= 90){
-      posicionCifrado = (posiciontextoInicial - 65 + parseInt(saltos)) % 26 + 65;
-      letracifrada = String.fromCharCode(posicionCifrado);
-      txtEnd += letracifrada;
-      
-    }else if (posiciontextoInicial >= 97 && posiciontextoInicial <= 122){
-      posicionCifrado = (posiciontextoInicial - 97 + parseInt(saltos)) % 26 + 97;
-      letracifrada = String.fromCharCode(posicionCifrado);
-      txtEnd += letracifrada;
+    if(letterPosition >= 65 && letterPosition <= 90){
+      encryptionLetterPosition = (letterPosition - 65 + parseInt(offset)) % 26 + 65;
+      cipheredLetter = String.fromCharCode(encryptionLetterPosition);
+      textOutput += cipheredLetter;
+    }else if (letterPosition >= 97 && letterPosition <= 122){
+      encryptionLetterPosition = (letterPosition - 97 + parseInt(offset)) % 26 + 97;
+      cipheredLetter = String.fromCharCode(encryptionLetterPosition);
+      textOutput += cipheredLetter;
     }else{
-      letracifrada = String.fromCharCode(posiciontextoInicial);
-      txtEnd += letracifrada;
+      cipheredLetter = String.fromCharCode(letterPosition);
+      textOutput += cipheredLetter;
     }
   }
-  return txtEnd;
+  return textOutput;
 }
 
-const descifrar = (saltos,txtInit) => {
-  let  txtEnd = '';
+const descifrar = (offset, text) => {
+  textOutput = '';
   
-  for( let i= 0; i < txtInit.length; i++){
+  for( let i= 0; i < text.length; i++){
+  
+    letterPosition = text.charCodeAt(i);
     
-    let posiciontextoInicial = txtInit.charCodeAt(i);
-    
-    if(posiciontextoInicial >= 65 && posiciontextoInicial <= 90){
-      posicionDescifrado = (posiciontextoInicial + 65 - parseInt(saltos)) % 26 + 65;
-      letraDescifrada = String.fromCharCode(posicionDescifrado);
-      txtEnd += letraDescifrada;
-      
-    }else if (posiciontextoInicial >= 97 && posiciontextoInicial <= 122){
-      nuevaPosicion = posiciontextoInicial-32;
-      posicionDescifrado = (nuevaPosicion + 65 - parseInt(saltos)) % 26 + 65;
-      letraDescifrada = String.fromCharCode(posicionDescifrado);
-      txtEnd += letraDescifrada.toLowerCase();
+    if(letterPosition >= 65 && letterPosition <= 90){
+      decryptionLetterPosition = (letterPosition + 65 - parseInt(offset)) % 26 + 65;
+      decipheredLetter = String.fromCharCode(decryptionLetterPosition);
+      textOutput += decipheredLetter;
+    }else if (letterPosition >= 97 && letterPosition <= 122){
+      decryptionLetterPosition = (letterPosition - 122 - parseInt(offset)) % 26 + 122;
+      decipheredLetter = String.fromCharCode(decryptionLetterPosition);
+      textOutput += decipheredLetter;
     }else{
-      letraDescifrada = String.fromCharCode(posiciontextoInicial);
-      txtEnd += letraDescifrada;
+      decipheredLetter = String.fromCharCode(letterPosition);
+      textOutput += decipheredLetter;
     }
   } 
-  return txtEnd;
+  return textOutput;
 }
 
 window.cipher = {
   encode : cifrar,
   decode : descifrar,
-  
+  createCipherWithOffset: (offset) => {
+      let obj = {
+        encode : (text) =>{
+          return cifrar(offset, text);
+        },
+        decode : (text) =>{
+          return descifrar(offset, text);
+        }
+      };
+      return obj;
+  }
 }
