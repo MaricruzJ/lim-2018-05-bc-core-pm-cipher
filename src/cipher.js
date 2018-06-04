@@ -32,7 +32,7 @@ const descifrar = (offset, text) => {
   textOutput = '';
   
   for( let i= 0; i < text.length; i++){
-  
+    
     letterPosition = text.charCodeAt(i);
     
     if(letterPosition >= 65 && letterPosition <= 90){
@@ -55,14 +55,14 @@ window.cipher = {
   encode : cifrar,
   decode : descifrar,
   createCipherWithOffset: (offset) => {
-      let obj = {
-        encode : (text) =>{
-          return cifrar(offset, text);
-        },
-        decode : (text) =>{
-          return descifrar(offset, text);
-        }
-      };
-      return obj;
+    let obj = {
+      encode : (text) =>{
+        return cifrar(offset, text);
+      },
+      decode : (text) =>{
+        return descifrar(offset, text);
+      }
+    };
+    return obj;
   }
 }

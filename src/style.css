@@ -1,148 +1,148 @@
 @import url('https://fonts.googleapis.com/css?family=Play');
 
-        html{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-        }
+html{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
 
-        body{
-            width:100%;
-            height: calc(100% - 100px);
-            font-family: 'Play', sans-serif;
-            margin: auto;
-        }
+body{
+  width:100%;
+  height: calc(100% - 100px);
+  font-family: 'Play', sans-serif;
+  margin: auto;
+}
 
-        .content {
-            width: 100%;
-            height: 100%;
-            background-color:white;
-        }
-        
-        .header {
-            width:100%;
-            height: 150px;
-            text-align: center;
-            display: table;
-            background-image: url(privacy.jpg);
-            background-position-x: -120px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0,0,0,0.24);
-        }   
-        
-        .header > span {
-            color: white;
-            display:table-cell;
-            vertical-align:middle;
-            font-weight: bold;
-            font-size: 5rem;
-            text-shadow: 2px 2px rgb(47, 186, 241);
-        }
+.content {
+  width: 100%;
+  height: 100%;
+  background-color:white;
+}
 
-        .div{
-            width: 33.33%;
-            height: calc(100% - 170px);
-            min-width: 350px; 
-            margin-top:10px;
-            margin-bottom: 10px;
-            float: left;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .div > span{
-            color: black;
-            font-size: 25px;
-        }
-        
-        input {
-            width: 200px;
-            height: 50px;
-            font-family: 'Play', sans-serif;
-            border: 0;
-            border-radius: 5px;
-            padding-left: 10px;
-            box-shadow: 0 1px 3px rgba(16, 94, 238, 0.603), 0 1px 2px rgba(0,0,0,0.24);
-            transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-            outline: none;
-        }
-        
-        textarea {
-            box-shadow: 0 10px 20px rgba(92, 162, 228, 0.781), 0 7px 5px rgba(0, 0, 0, 0.39);
-            border: 0;
-            font-size: 20px;
-            outline: none;
-            padding: 10px;
-            border-radius: 3px;
-        }
+.header {
+  width:100%;
+  height: 150px;
+  text-align: center;
+  display: table;
+  background-image: url(privacy.jpg);
+  background-position-x: -120px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0,0,0,0.24);
+}   
 
-        button {
-            width: 200px;
-            height: 50px;
-            text-align: left;
-            font-family: 'Play', sans-serif;
-            border-radius: 5px;
-            background-color: #00304e;
-            outline: none;
-            color: white;
-            box-shadow: 0 5px 10px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-            transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-            border: 0;
-            font-size: 1rem;
-            padding-left: 30px;
-        }
+.header > span {
+  color: white;
+  display:table-cell;
+  vertical-align:middle;
+  font-weight: bold;
+  font-size: 5rem;
+  text-shadow: 2px 2px rgb(47, 186, 241);
+}
 
-        button:hover {
-            box-shadow: 0 1px 1px rgba(0,0,0,0.25), 0 4px 4px rgba(0,0,0,0.22);
-        }
+.div{
+  width: 33.33%;
+  height: calc(100% - 170px);
+  min-width: 350px; 
+  margin-top:10px;
+  margin-bottom: 10px;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-        .btn-encode::before{
-            content: url(lock-encode.png);
-            right: 5px;
-            position:relative;
-            top:7px;            
-        }
+.div > span{
+  color: black;
+  font-size: 25px;
+}
 
-        .btn-decode::before{
-            content: url(lock-decode.png);
-            right: 5px;
-            position:relative;
-            top:7px;            
-        }
+input {
+  width: 200px;
+  height: 50px;
+  font-family: 'Play', sans-serif;
+  border: 0;
+  border-radius: 5px;
+  padding-left: 10px;
+  box-shadow: 0 1px 3px rgba(16, 94, 238, 0.603), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  outline: none;
+}
 
-        .text{
-            width:400px;
-            height: 300px;
-            font-family: 'Play', sans-serif;
-            resize: none;
-        }
-       
-        footer {
-            width:100%;
-            height: 100px;
-            float: left;
-            text-align: center;
-            margin: auto;
-            display: table;
-            background-image: url(privacy.jpg);
-            background-position-x: -120px;
-        }
+textarea {
+  box-shadow: 0 10px 20px rgba(92, 162, 228, 0.781), 0 7px 5px rgba(0, 0, 0, 0.39);
+  border: 0;
+  font-size: 20px;
+  outline: none;
+  padding: 10px;
+  border-radius: 3px;
+}
 
-        footer > span {
-            font-size: 30px;
-            color: white;
-            display:table-cell;
-            vertical-align:middle;           
-        }
+button {
+  width: 200px;
+  height: 50px;
+  text-align: left;
+  font-family: 'Play', sans-serif;
+  border-radius: 5px;
+  background-color: #00304e;
+  outline: none;
+  color: white;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  border: 0;
+  font-size: 1rem;
+  padding-left: 30px;
+}
 
-        @media only screen and (max-width: 1300px) {
-            .div{
-                width: 100%;
-                height: auto;
-                text-align: center;
-            }
-            .text {
-                width: calc(100% - 100px);
-            }
-        }
+button:hover {
+  box-shadow: 0 1px 1px rgba(0,0,0,0.25), 0 4px 4px rgba(0,0,0,0.22);
+}
+
+.btn-encode::before{
+  content: url(lock-encode.png);
+  right: 5px;
+  position:relative;
+  top:7px;            
+}
+
+.btn-decode::before{
+  content: url(lock-decode.png);
+  right: 5px;
+  position:relative;
+  top:7px;            
+}
+
+.text{
+  width:400px;
+  height: 300px;
+  font-family: 'Play', sans-serif;
+  resize: none;
+}
+
+footer {
+  width:100%;
+  height: 100px;
+  float: left;
+  text-align: center;
+  margin: auto;
+  display: table;
+  background-image: url(privacy.jpg);
+  background-position-x: -120px;
+}
+
+footer > span {
+  font-size: 30px;
+  color: white;
+  display:table-cell;
+  vertical-align:middle;           
+}
+
+@media only screen and (max-width: 1300px) {
+  .div{
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .text {
+    width: calc(100% - 100px);
+  }
+}

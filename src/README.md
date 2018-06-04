@@ -26,27 +26,30 @@ ya que el proyecto se presentaría de forma individual.
 
 Se logró al objetivo: 
 
-> * HTML		: Estructurar la página en base al prototipo.
+> * HTML	: Estructurar la página en base al prototipo.
 > * CSS		: Añadirle estilos a la pagina.
-> * JavaScript	: - Eventos del DOM.
-	   	  - Cifrado y Descifrado solo de mayúsculas.
-> * DEMO		: Revisión del avance del proyecto 1.
+> * JavaScript	: 
+>		- Eventos del DOM.
+>	   	- Cifrado y Descifrado solo de mayúsculas.
+> * DEMO	: Revisión del avance del proyecto 1.
 
 ## Semana 2:
 
 Considerando que el usuario no necesariamente escriba en mayúsculas, entonces comencé a modificar la parte de JavaScript,
-pasando de solo cifrar o descifrar mayúscilas, también tome en cuenta las minúsculas o ambas. Asimismo se tomó en cuenta
+pasando de solo cifrar o descifrar mayúsculas, también tome en cuenta las minúsculas o ambas. Asimismo se tomó en cuenta
 los espacios, números y demás signos mostrándolo de la misma forma que se ingresó, debido a que según la historia, Julio
 Cesar usaba este tipo de cifrado alfabético para comunicarse con sus generales. 
 
-Se editó el archivo para el Test, logrando un 100%.
+> Se editó el archivo para el Test, logrando un 100%.
 
-Además tomando en cuenta los feedback, decidí modificar el css para darle más estilo a la web.
+![Test](test.png)
 
-Teniendo en cuenta la rúbrica de evaluación, instalé ESlint y JShint en Visual Studio Code, 
-renombré las variables, haciendo uso del camelcase, ingles, identación, entre otros.
+> Tomando en cuenta los feedback, decidí modificar el css para darle más estilo a la web.
 
-En la caja de texto para el ingreso del offset (llave), se limitó a que el usuario ingrese solo números.
+> En base a la rúbrica de evaluación, instalé ESlint y JShint en Visual Studio Code, 
+> renombré las variables, haciendo uso del camelcase, ingles, identación, entre otros.
+
+> En la caja de texto para el ingreso del offset (llave), se limitó a que el usuario ingrese solo números.
 
 Finalmente se tiene la aplicación web para cifrar y descifrar texto.
 
@@ -54,10 +57,17 @@ Finalmente se tiene la aplicación web para cifrar y descifrar texto.
 
 ## HACKER EDITION:
 
-Para realizar esta parte tuve que volver a leer teoría y definir bien en que consistía
-una función, un objeto y un método. Finalmente usé el modo consola de la web usando el typeof.
+Para realizar esta parte tuve que volver a leer teoría y definir 
+
+> * Una función
+> * Un objeto
+> * Un método
+
+Finalmente usé el modo consola de la web usando el typeof.
+
+![Consola HackerEdition](console.png)
 
 ## README:
 
-Usando https://joedicastro.com/pages/markdown.html como guía, realizo este readme.
+Usando https://joedicastro.com/pages/markdown.html como guía, realizé este readme.
 
